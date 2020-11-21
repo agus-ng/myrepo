@@ -3,33 +3,27 @@ Test Drive
 Agustín Gutiérrez
 21-11-2020
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax
-for authoring HTML, PDF, and MS Word documents. For more details on
-using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that
-includes both content as well as the output of any embedded R code
-chunks within the document. You can embed an R code chunk like this:
-
 ``` r
-summary(cars)
+print("Hello World")
 ```
 
-    ##      speed           dist       
-    ##  Min.   : 4.0   Min.   :  2.00  
-    ##  1st Qu.:12.0   1st Qu.: 26.00  
-    ##  Median :15.0   Median : 36.00  
-    ##  Mean   :15.4   Mean   : 42.98  
-    ##  3rd Qu.:19.0   3rd Qu.: 56.00  
-    ##  Max.   :25.0   Max.   :120.00
+    ## [1] "Hello World"
 
-## Including Plots
+``` r
+x <- rnorm(10)
+y <- runif(10)
+df <- cbind(x, y)
+df
+```
 
-You can also embed plots, for example:
-
-![](test_drive_files/figure-gfm/pressure-1.png)<!-- -->
-
-Note that the `echo = FALSE` parameter was added to the code chunk to
-prevent printing of the R code that generated the plot.
+    ##                 x         y
+    ##  [1,] -0.30529668 0.9048339
+    ##  [2,]  0.13412312 0.3538761
+    ##  [3,] -1.05327806 0.4271509
+    ##  [4,]  0.75297209 0.3619862
+    ##  [5,]  1.71545296 0.7377000
+    ##  [6,] -0.17005400 0.3384846
+    ##  [7,] -0.66793362 0.8873134
+    ##  [8,]  0.04450768 0.2208913
+    ##  [9,] -0.33088866 0.7385243
+    ## [10,] -3.22178646 0.4940919
