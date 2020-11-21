@@ -2,9 +2,7 @@
 title: "Test Drive"
 author: "Agustín Gutiérrez"
 date: "21-11-2020"
-output: 
-  html_document: 
-    keep_md: github_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
